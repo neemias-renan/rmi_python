@@ -9,17 +9,26 @@ Este é um exemplo de um sistema de votação remota utilizando Pyro4 em Python.
 
 ## Como Executar
 
-### Passo 1: Iniciando o Servidor de Votação
+### Passo 1: Verificando se o servidor de nomes está em execução
 
-1. Abra um terminal e navegue até o diretório onde o arquivo `server.py` está localizado.
+1. Abra um terminal e navegue até o diretório do projeto.
 
-2. Execute o servidor de votação com o seguinte comando:
+2. Você pode iniciá-lo com o seguinte comando:
+
+```bash
+python -m Pyro4.naming
+
+```
+
+### Passo 2: Iniciando o Servidor de Votação
+
+1. Execute o servidor de votação com o seguinte comando:
 
 ```bash
 python server.py
 ```
 
-### Passo 2: Iniciando o Cliente de Votação
+### Passo 3: Iniciando o Cliente de Votação
 
 1. Abra outro terminal e navegue até o diretório onde o arquivo `client.py` está localizado.
 
@@ -29,7 +38,7 @@ python server.py
 python client.py
 ```
 
-### Passo 3: Interagindo com o Sistema
+### Passo 4: Interagindo com o Sistema
 
 O cliente irá exibir um menu com opções para interagir com o sistema. Você pode:
 
